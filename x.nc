@@ -10,23 +10,38 @@
 
 (hopefully this will contribute to making an L075 shaft coupler for the Y axis!)
 
+(codes used in this file: )
 
-g90
-g20
-s1000     (spindle vfd 60hz)
+(G90       = use absolute coordinates)
+(G20       = lengths in inches)
+(S1000     = set the spindle frequency to 60hz so the tree mill belt adjustment should read the correct RPM)
+(            s500 should be 30hz and s2000 should be 90hz... if all goes well)
+(M3        = start spindle)
+(M5        = stop spindle)
+(G0 X5     = rapid move to x=5)
+(G1 X5 F7  = move to x5 at 7in/min)
+(G4 P2     = dwell/wait 2 seconds)
+(M0        = pause until input is received from the UI)
+(G10 P1 X5 = set the g54 origin to x=5 in machine coordinates)
+(g54 = use the g54 origin for the commands that follow)
 
-m0        (pause for cycle start button)
 
-m3        (start spindle)
-g4 p2     (wait 2 seconds for the spindle to spin up)
-g1 x2 f50 (move to x=2)
-m5        (stop spindle)
+G20
+S1000
 
-m0
+G54  (before starting: manually set the g54 x origin about 1/8in to the left of the cylinder)
 
-m3
-g4 p2
-g1 x0 f50
+M0  (manuall set the end mill to about .2 depth of cut and lock the quill. Ready for the first cut ????)
+
+M3
+G4 P2
+G1 X2.7 F7
+M5
+
+m0  (lower another .2 DOC. Ready to cut back to where we started ???)
+
+M3
+G4 P2
+G1 X0 F7
 m5
-
 
