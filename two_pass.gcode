@@ -36,11 +36,15 @@ G20
 S1000
 G54
 
+(start the spindle and wait for it to spin up)
 M3
 G4 P2
+
+(make a cut and shut off the spindle)
 G1 X2.6 F7
 M5
 
+%wait
 m0  (set another .2 DOC. Ready for the second cut ?)
 
 M3
