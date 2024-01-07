@@ -1,18 +1,30 @@
-machine instruction experiments as I add motors and controls to an old Tree 2uvrc milling machine.
+# Learn Gcode
 
-starting with manually written commands
+Here are my machine instruction experiments as I add motors and controls to an old Tree 2uvrc milling machine while attempting to avoid a crash.
+I started with manually written commands and then began editing freecad path generated files as I add motors and limit switches to each axis.
+Eventually I hope to use the output of freecad path directly.
 
-then editing freecad path generated files as I add motors and limit switches to each axis
 
-with backlash compensation from:
+Do not load anything from this repository on your machine. These files will destroy your machine. If you break your machine, you get to keep both pieces.
+
+
+# Software
+
+The mill controller is an arduino mega 2560 running grbl with backlash compensation from:
 
 https://github.com/shooter64738/grbl-mega
 
 
+The mill web UI is cncjs runing on a raspberry pi connected to the arduino via USB:
 
+https://cnc.js.org
+
+
+# Config
 
 Here are the current machine settings after some linear distance and backlash calibration:
 
+```
 CNCjs 1.10.3 [Grbl]
 Connected to /dev/ttyACM0 with a baud rate of 115200
 Grbl 1.1h(backlash comp) ['$' for help]
@@ -57,3 +69,5 @@ $141=0.190
 $142=1.000
 
 ok
+```
+
