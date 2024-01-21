@@ -47,11 +47,10 @@ CNCjs 1.10.3 [Grbl]
 Connected to /dev/ttyACM0 with a baud rate of 115200
 Grbl 1.1h(backlash comp) ['$' for help]
 client> $$
-
 $0=10 (Step pulse time, microseconds)
 $1=254 (Step idle delay, milliseconds)
 $2=0 (Step pulse invert, mask)
-$3=3 (Step direction invert, mask)
+$3=7 (Step direction invert, mask)
 $4=0 (Invert step enable pin, boolean)
 $5=1 (Invert limit pins, boolean)
 $6=0 (Invert probe pin, boolean)
@@ -72,20 +71,19 @@ $31=500 (Minimum spindle speed, RPM)
 $32=0 (Laser-mode enable, boolean)
 $100=314.870 (X-axis travel resolution, step/mm)
 $101=314.870 (Y-axis travel resolution, step/mm)
-$102=500.000 (Z-axis travel resolution, step/mm)
+$102=15600.000 (Z-axis travel resolution, step/mm)
 $110=2400.000 (X-axis maximum rate, mm/min)
 $111=2400.000 (Y-axis maximum rate, mm/min)
-$112=2400.000 (Z-axis maximum rate, mm/min)
+$112=80.000 (Z-axis maximum rate, mm/min)
 $120=80.000 (X-axis acceleration, mm/sec^2)
 $121=80.000 (Y-axis acceleration, mm/sec^2)
-$122=80.000 (Z-axis acceleration, mm/sec^2)
+$122=20.000 (Z-axis acceleration, mm/sec^2)
 $130=200.000 (X-axis maximum travel, millimeters)
 $131=200.000 (Y-axis maximum travel, millimeters)
 $132=200.000 (Z-axis maximum travel, millimeters)
 $140=0.430
 $141=0.190
-$142=1.000
-
+$142=0.130
 ok
 ```
 
