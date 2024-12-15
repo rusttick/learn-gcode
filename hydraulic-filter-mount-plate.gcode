@@ -1,6 +1,6 @@
 (Exported by FreeCAD)
 (Post Processor: script_module)
-(Output Time:2024-12-15 12:44:27.401438)
+(Output Time:2024-12-15 17:50:27.483494)
 (Begin preamble)
 G17 G90
 G20
@@ -18,6 +18,7 @@ M3 S1000
 (Begin operation: Profile)
 (Coolant On:Mist)
 M7
+M8
 (Path: Profile)
 (Profile)
 (Compensated Tool Path. Diameter: 4.7498)
@@ -54,33 +55,10 @@ G0 Z0.6969
 (Finish operation: Profile)
 (Coolant Off:Mist)
 M9
-(Begin operation: Profile001)
-(Coolant On:Mist)
-M7
-(Path: Profile001)
-(Profile001)
-(Compensated Tool Path. Diameter: 4.7498)
-G0 Z0.6969
-G0 X6.5661 Y6.5661
-G0 Z0.6181
-G1 X6.5661 Y6.5661 Z0.4500 F5.0000
-G2 X6.5935 Y6.5000 Z0.4500 I-0.0661 J-0.0661 K0.0000 F5.0000
-G1 X6.5935 Y0.0000 Z0.4500 F5.0000
-G2 X6.5000 Y-0.0935 Z0.4500 I-0.0935 J0.0000 K0.0000 F5.0000
-G1 X0.0000 Y-0.0935 Z0.4500 F5.0000
-G2 X-0.0935 Y0.0000 Z0.4500 I0.0000 J0.0935 K0.0000 F5.0000
-G1 X-0.0935 Y6.5000 Z0.4500 F5.0000
-G2 X0.0000 Y6.5935 Z0.4500 I0.0935 J-0.0000 K0.0000 F5.0000
-G1 X6.5000 Y6.5935 Z0.4500 F5.0000
-G2 X6.5661 Y6.5661 Z0.4500 I-0.0000 J-0.0935 K0.0000 F5.0000
-G0 Z0.6969
-G0 Z0.6969
-(Finish operation: Profile001)
-(Coolant Off:Mist)
-M9
 (Begin operation: Helix)
 (Coolant On:Mist)
 M7
+M8
 (Path: Helix)
 (Helix)
 (helix cut operation)
