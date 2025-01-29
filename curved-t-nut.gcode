@@ -17,6 +17,7 @@ M3 S1000
 (Finish operation: 5/16 HSS TiN001)
 (Begin operation: MillFace)
 (Coolant On:Flood)
+M7
 M8
 (Path: MillFace)
 (MillFace)
@@ -67,11 +68,7 @@ G2 X0.1401 Y0.1067 Z0.4000 I0.3996 J-1.6934 K0.0000 F10.0000
 G0 Z0.7969
 G0 Z0.7969
 (Finish operation: MillFace)
-(Coolant Off:Flood)
-M9
-(Begin operation: Profile)
-(Coolant On:Flood)
-M8
+
 (Path: Profile)
 (Profile)
 (Compensated Tool Path. Diameter: 7.9502)
@@ -122,11 +119,7 @@ G2 X0.0000 Y-0.0741 Z0.1800 I-0.0330 J0.1530 K0.0000 F10.0000
 G0 Z0.7969
 G0 Z0.7969
 (Finish operation: Profile)
-(Coolant Off:Flood)
-M9
-(Begin operation: Profile001)
-(Coolant On:Flood)
-M8
+
 (Path: Profile001)
 (Profile001)
 (Compensated Tool Path. Diameter: 7.9502)
